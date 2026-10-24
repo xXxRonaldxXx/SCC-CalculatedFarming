@@ -1,0 +1,16 @@
+name: Idea or feature request
+description: Something SCC: Calculated Farming should be able to do
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should it do?
+      description: Describe the situation you are in and what would help. Screenshots welcome.
+    validations:
+      required: true
+  - type: input
+    id: mods
+    attributes:
+      label: Does this involve another mod?
+      description: If it is about compatibility, name the mod and the version.

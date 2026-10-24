@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in SCC: Calculated Farming does not work as it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. The more of this you fill in, the faster it gets fixed.
+        **`logs/scc.log` and `logs/latest.log` are the most useful files.**
+  - type: input
+    id: version
+    attributes:
+      label: Add-on version
+      description: The file name of the jar, e.g. scc_farming-1.0.0.jar
+      placeholder: scc_farming-1.0.0.jar
+    validations:
+      required: true
+  - type: input
+    id: scc
+    attributes:
+      label: SCC version
+      placeholder: scc-1.5.0.jar
+    validations:
+      required: true
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft and NeoForge version
+      placeholder: "1.21.1 / NeoForge 21.1.x"
+    validations:
+      required: true
+  - type: input
+    id: modpack
+    attributes:
+      label: Modpack
+      description: Name and version, or "none" if you built the instance yourself.
+      placeholder: All the Mods 10 – 4.7
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: logs/scc.log / latest.log
+      description: Paste the interesting part, or attach the file. Big files are better on mclo.gs or gist.github.com.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I am on the newest version of the add-on and of SCC
+          required: true
+        - label: I searched the existing issues
+          required: true
